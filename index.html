@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LAYOUT </title>
+    <title> Home </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link href="boostrap4-3/fontawesome/css/font-awesome.css" rel="stylesheet">
 
     <style>
@@ -13,7 +13,11 @@
         nav, footer{
             background: #000428; !important;
         }
-
+        .darkBlue{
+            color: #000428;
+            border-bottom: 3px solid;
+            border-color: #000428;
+        }
     </style>
 
 
@@ -23,7 +27,7 @@
 <nav class="navbar navbar-collapse navbar-expand-md navbar-dark  sticky-top">
     <div class="container">
         <div class="navbar-brand">
-            <a class="btn btn-link"><h4><b>1TV</b></h4></a>
+            <a class="btn btn-link text-light" href="index.html"><h4><b>1TV</b></h4></a>
         </div>
         <div class="navbar-collapse collapse navbar-nav nav">
             <ul class="nav-item navbar nav mr-auto">
@@ -46,8 +50,8 @@
     </div>
 </nav>
 <!--NavBar-->
-<!-- Carousel -->
 
+<!-- Carousel -->
 <div class="bd-example">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -91,14 +95,28 @@
     </div>
 </div>
 <!-- Carousel -->
+
 <!-- Main -->
-<div class="container-fluid mt-2 ">
-
-
+<div class="container mt-2 ">
+    <div class="row">
+       <h3 class="darkBlue m-1">WORLD NEWS</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-3 m-1 p-0 card">
+            <div class="card-header m-0 p-0">
+                <img src="https://i.guim.co.uk/img/media/8b9ee671d67e0308989d6aa31f048c83c659f0cc/1050_669_4679_2808/master/4679.jpg?width=1920&quality=85&auto=format&fit=max&s=f2082f5326fc7642cdbcd607a5a2751e" width="100%">
+            </div>
+            <div class="card-body">
+                <h6>Son of former Egyptian president Mohamed Morsi dies aged 25 </h6>
+                <hr>
+                <p>
+                    The youngest son of the late former Egyptian president Mohamed Morsi has died of a heart attack he suffered while driving in Cairo, doctors said.
+                </p>
+            </div>
+        </div>
+    </div>
 
 </div>
-
-
 
 <!-- Main -->
 <!-- Footer -->
