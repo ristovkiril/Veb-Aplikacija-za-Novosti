@@ -10,13 +10,14 @@
         body{
             background: lightgray;
         }
-        nav, footer{
+        nav, footer {
             background: #000428; !important;
         }
+
         .darkBlue{
             color: #000428;
-            border-bottom: 3px solid;
-            border-color: #000428;
+            border-bottom: 4px solid;
+            border-color: red;
         }
         img{
             object-fit: cover;
@@ -24,6 +25,11 @@
         .newsFont{
             font-family: Century;
             font-weight: normal;
+        }
+        .badge{
+            position: absolute;
+            top: 5px;
+            left: 0;
         }
     </style>
 
@@ -51,10 +57,10 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     NEWS
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">WORLD</a>
-                    <a class="dropdown-item" href="#">SPORT</a>
-
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item " href="#">WORLD</a>
+                    <a class="dropdown-item " href="#">POLITICS</a>
+                    <a class="dropdown-item " href="#">SPORT</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -82,7 +88,7 @@
 <!--NavBar-->
 
 <!-- Carousel -->
-<div class="bd-example">
+<div class="bd-example ">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -133,12 +139,12 @@
     <div class="row">
        <h3 class="newsFont darkBlue m-1">WORLD NEWS</h3>
     </div>
-    <div class="row">
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+    <div class="row ml-3">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-4 ml-5 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://i.guim.co.uk/img/media/8b9ee671d67e0308989d6aa31f048c83c659f0cc/1050_669_4679_2808/master/4679.jpg?width=1920&quality=85&auto=format&fit=max&s=f2082f5326fc7642cdbcd607a5a2751e" width="100%">
+                <span class="badge badge-warning rounded-0">EGY</span>
                 <h5 class="p-2"><b>Son of former Egyptian president Mohamed Morsi dies aged 25 </b></h5>
-
             </div>
             <div class="card-body">
 
@@ -154,6 +160,7 @@
         <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://english.republika.mk/wp-content/uploads/2019/08/boki-13-reket.jpg" width="100%" >
+                <span class="badge badge-warning rounded-0">MKD</span>
                 <h5 class="p-2"><b>Tapes show Boki 13 taking a bag of money from Jordan Kamcev </b></h5>
 
             </div>
@@ -172,6 +179,8 @@
             <div class="card-header m-0 p-0">
                 <img src="https://cdn.cnn.com/cnnnext/dam/assets/190902132203-trump-golfing-0802-screengrab-medium-plus-169.jpg"
                      width="100%">
+                <span class="badge badge-warning rounded-0">USA</span>
+
                 <h5 class="p-2"><b>Trump went golfing as Hurricane Dorian threatens US</b></h5>
 
             </div>
@@ -190,15 +199,77 @@
     </div>
     <!--World News-->
 
+    <!--Politic News-->
+    <div class="row">
+        <h3 class="newsFont darkBlue m-1">POLITICS NEWS</h3>
+    </div>
+    <div class="row ml-3">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-4 ml-5 p-0 card">
+            <div class="card-header m-0 p-0">
+                <img src="https://pmcvariety.files.wordpress.com/2019/03/trump-1.jpg?w=1000"
+                     width="100%">
+                <span class="badge badge-warning rounded-0">USA</span>
+                <h5 class="p-2"><b>Two reporters shouldn't be allowed at the White House </b></h5>
+
+            </div>
+            <div class="card-body">
+                <p>
+                    “The Washington Post’s Philip Rucker and Ashley Parker, two nasty lightweight reporters, shouldn’t even be allowed on the grounds of the White House because their reporting is so DISGUSTING and FAKE,” tweeted at 7:09 a.m.
+                </p>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+
+            <div class="card-header m-0 p-0">
+                <img src="https://cdn1.img.sputniknews.com/images//107594/50/1075945047.jpg" width="100%">
+                <span class="badge badge-warning rounded-0">IRN</span>
+                <h5 class="p-2"><b>Iran now using advanced centrifuges, violating nuclear deal</b></h5>
+
+            </div>
+            <div class="card-body">
+                <p>
+                    TEHRAN, Iran — Iran has begun using arrays of advanced centrifuges to enrich uranium in violation of its 2015 nuclear deal, a spokesman said Saturday, warning that Europe has little time left to offer new terms to save the accord.
+                </p>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+            <div class="card-header m-0 p-0">
+                <img src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2019/03/RTX43VX0.jpg?fit=788%2C460&ssl=1"
+                     width="100%">
+                <span class="badge badge-warning rounded-0">USA</span>
+                <h5 class="p-2"><b>Democrats face internal rancor over deep fakes, disinformation</b></h5>
+
+            </div>
+            <div class="card-body ">
+                <p>
+                    As illegitimate tactics like manipulated videos, troll farms, and fake social media accounts spread, state Democratic officials are demanding an official policy disavowing disinformation warfare.
+                </p>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+            </div>
+        </div>
+
+    </div>
+    <!--Politic News-->
+
     <!--Sport News-->
     <div class="row">
         <h3 class="newsFont darkBlue m-1">SPORT NEWS</h3>
     </div>
-    <div class="row">
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+    <div class="row ml-3">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-4 ml-5 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2019/03/20/2019-03-19t134417z_944144060_rc194c6b9710_rtrmadp_3_soccer-friendly-wal-tto-preview.jpg?itok=Oyll4YXD&timestamp=1553015977"
                      width="100%">
+                <span class="badge badge-warning rounded-0">Football</span>
                 <h5 class="p-2"><b>Ryan Giggs hails Gareth Bale after later winner against Azerbaijan</b></h5>
 
             </div>
@@ -217,6 +288,7 @@
 
             <div class="card-header m-0 p-0">
                 <img src="https://e1.365dm.com/19/09/768x432/skysports-lewis-hamilton-sebastian_4767056.jpg?20190906172125" width="100%">
+                <span class="badge badge-warning rounded-0">Formula 1</span>
                 <h5 class="p-2"><b>Italian GP Practice Three: Sebastian Vettel keeps Ferrari on top</b></h5>
 
             </div>
@@ -235,6 +307,7 @@
             <div class="card-header m-0 p-0">
                 <img src="https://e0.365dm.com/19/09/768x432/skysports-bianca-andreescu_4766460.jpg?20190906090628"
                      width="100%">
+                <span class="badge badge-warning rounded-0">Tennis</span>
                 <h5 class="p-2"><b>US Open: Serena Williams vs Bianca Andreescu women's final preview</b></h5>
 
             </div>
