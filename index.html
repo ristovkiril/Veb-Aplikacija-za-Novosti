@@ -31,23 +31,37 @@
             top: 5px;
             left: 0;
         }
+        .card-footer{
+            border-top: 0;
+            background-color: white;
+        }
+
+
+        @media only screen and (max-width: 700px) {
+            .card{
+                margin-top: 1.5rem !important;
+            }
+            .newsFont{
+                margin-top: 1.5rem !important;
+            }
+        }
     </style>
 
 
 </head>
 <body>
 <!--NavBar-->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="btn btn-link text-light" href="index.html"><h4><b>1TV</b></h4></a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container ">
+        <div class="navbar-brand p-0">
+            <a class="btn btn-link text-light p-0" href="index.html"><h4><b>1TV</b></h4></a>
         </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="/index.html">HOME <span class="sr-only">(current)</span></a>
@@ -77,7 +91,7 @@
             <div class="input-group ">
                 <input class="form-control " type="search" placeholder="Search" aria-label="Search">
                 <div class="input-group-append ">
-                    <button class="btn brn-sm btn-light" type="submit"><span class="fa fa-search"></span></button>
+                    <button class="btn brn-sm btn-light " type="submit"><span class="fa fa-search"></span></button>
                 </div>
             </div>
         </form>
@@ -134,13 +148,13 @@
 <!-- Carousel -->
 
 <!-- Main -->
-<div class="container  bg-light p-4 pl-5">
+<div class="container  bg-light p-4 pl-md-5 ">
     <!--World News-->
     <div class="row">
        <h3 class="newsFont darkBlue m-1">WORLD NEWS</h3>
     </div>
-    <div class="row ml-3">
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 ml-5 p-0 card">
+    <div class="row ml-md-3 ml-lg-3 ml-sm-0">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 ml-lg-5 ml-md-4 ml-sm-0 m-xs-2 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://i.guim.co.uk/img/media/8b9ee671d67e0308989d6aa31f048c83c659f0cc/1050_669_4679_2808/master/4679.jpg?width=1920&quality=85&auto=format&fit=max&s=f2082f5326fc7642cdbcd607a5a2751e" width="100%">
                 <span class="badge badge-warning rounded-0">EGY</span>
@@ -154,10 +168,10 @@
             </div>
 
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 mt-sm-2 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://english.republika.mk/wp-content/uploads/2019/08/boki-13-reket.jpg" width="100%" >
                 <span class="badge badge-warning rounded-0">MKD</span>
@@ -172,10 +186,10 @@
             </div>
 
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 mt-sm-2 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://cdn.cnn.com/cnnnext/dam/assets/190902132203-trump-golfing-0802-screengrab-medium-plus-169.jpg"
                      width="100%">
@@ -192,7 +206,7 @@
             </div>
 
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
 
@@ -203,8 +217,8 @@
     <div class="row">
         <h3 class="newsFont darkBlue m-1">POLITICS NEWS</h3>
     </div>
-    <div class="row ml-3">
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 ml-5 p-0 card">
+    <div class="row ml-md-3 ml-lg-3 ml-sm-0">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 ml-lg-5 ml-md-4 ml-sm-0 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://pmcvariety.files.wordpress.com/2019/03/trump-1.jpg?w=1000"
                      width="100%">
@@ -218,10 +232,10 @@
                 </p>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 p-0 card">
 
             <div class="card-header m-0 p-0">
                 <img src="https://cdn1.img.sputniknews.com/images//107594/50/1075945047.jpg" width="100%">
@@ -235,11 +249,11 @@
                 </p>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
 
             </div>
         </div>
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2019/03/RTX43VX0.jpg?fit=788%2C460&ssl=1"
                      width="100%">
@@ -253,7 +267,7 @@
                 </p>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
 
@@ -264,8 +278,8 @@
     <div class="row">
         <h3 class="newsFont darkBlue m-1">SPORT NEWS</h3>
     </div>
-    <div class="row ml-3">
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 ml-5 p-0 card">
+    <div class="row ml-md-3 ml-lg-3 ml-sm-0">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 ml-lg-5 ml-md-4 ml-sm-0 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2019/03/20/2019-03-19t134417z_944144060_rc194c6b9710_rtrmadp_3_soccer-friendly-wal-tto-preview.jpg?itok=Oyll4YXD&timestamp=1553015977"
                      width="100%">
@@ -281,10 +295,10 @@
                 </p>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 p-0 card">
 
             <div class="card-header m-0 p-0">
                 <img src="https://e1.365dm.com/19/09/768x432/skysports-lewis-hamilton-sebastian_4767056.jpg?20190906172125" width="100%">
@@ -299,11 +313,11 @@
 
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
 
             </div>
         </div>
-        <div class="col-md-9 col-lg-3 col-sm-4 m-4 p-0 card">
+        <div class="col-md-9 col-lg-3 col-sm-4 m-md-4 p-0 card">
             <div class="card-header m-0 p-0">
                 <img src="https://e0.365dm.com/19/09/768x432/skysports-bianca-andreescu_4766460.jpg?20190906090628"
                      width="100%">
@@ -317,7 +331,7 @@
                 </p>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-primary mt-2"> Read this</button>
+                <button type="button" class="btn btn-primary "> Read this</button>
             </div>
         </div>
 
