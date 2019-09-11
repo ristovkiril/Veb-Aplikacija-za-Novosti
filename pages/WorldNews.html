@@ -19,10 +19,6 @@
             border-color: red;
         }
 
-        .page-item a{
-            color: #000428; !important;
-        }
-
 
     </style>
 
@@ -105,7 +101,7 @@
         <!-- NEWS -->
         <div class="col-lg-8 col-md-12">
 
-            <div class="row border-sm border-bottom">
+            <div class="row border-sm border-bottom page-1">
                 <!-- Image -->
                 <div class="col-md-4 p-2">
                     <img src="https://i.guim.co.uk/img/media/8b9ee671d67e0308989d6aa31f048c83c659f0cc/1050_669_4679_2808/master/4679.jpg?width=1920&quality=85&auto=format&fit=max&s=f2082f5326fc7642cdbcd607a5a2751e" width="100%" >
@@ -138,7 +134,7 @@
                 <!-- Body -->
             </div>
 
-            <div class="row border-sm border-bottom">
+            <div class="row border-sm border-bottom page-1">
                 <!-- Image -->
                 <div class="col-md-4 p-2">
                     <img src="https://english.republika.mk/wp-content/uploads/2019/08/boki-13-reket.jpg" width="100%" >
@@ -171,7 +167,7 @@
                 <!-- Body -->
             </div>
 
-            <div class="row border-sm border-bottom">
+            <div class="row border-sm border-bottom page-1">
                 <!-- Image -->
                 <div class="col-md-4 p-2">
                     <img src="https://cdn.cnn.com/cnnnext/dam/assets/190902132203-trump-golfing-0802-screengrab-medium-plus-169.jpg" width="100%">
@@ -205,7 +201,7 @@
                 <!-- Body -->
             </div>
 
-            <div class="row border-sm border-bottom">
+            <div class="row border-sm border-bottom page-1">
                 <!-- Image -->
                 <div class="col-md-4 p-2">
                     <img src="https://static.ffx.io/images/$zoom_0.138%2C$multiply_1%2C$ratio_1.5%2C$width_756%2C$x_0%2C$y_0/t_crop_custom/w_335/q_86%2Cf_auto/b84dd595ea67dff7bd1680517a132e375a515669" width="100%" >
@@ -238,7 +234,7 @@
                 <!-- Body -->
             </div>
 
-            <div class="row ">
+            <div class="row border-sm border-bottom page-1">
                 <!-- Image -->
                 <div class="col-md-4 p-2">
                     <img src="https://gdb.polygraph.info/0D1EF52C-5C79-4760-B7B9-9F40B7B3F052_w408_r1_s.jpg" width="100%" >
@@ -275,18 +271,17 @@
             <div class="row ">
                 <div class="col-12 " aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pt-3">
-                        <li class="page-item ">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item "><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
+                            <button class="page-link" id="previous" aria-label="Previous" >
+                                <span aria-hidden="true">&laquo;</span>
+                            </button>
+                        </li>
+                        <li class="page-item"><a class="page-link" id="first-page" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" id="second-page" href="#">2</a></li>
+                        <li class="page-item">
+                            <button class="page-link" href="#" id="next" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -460,6 +455,55 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" >
+    $(document).ready(function () {
+
+        $('.page-1').show();
+        $('.page-2').hide();
+
+
+        $('#first-page').click(function () {
+
+            $('.page-1').show();
+            $('.page-2').hide();
+            $('#previous').disable;
+            $('#next').enable;
+
+        });
+
+        $('#second-page').click(function () {
+            $('.page-2').show();
+            $('.page-1').hide();
+            $('#next').disable;
+            $('#previous').enable;
+
+
+        });
+
+        $('#previous').click(function () {
+            if ($('.page-1').is(':hidden')){
+                $('.page-1').show();
+                $('.page-2').hide();
+                $('#previous').disable;
+                $('#next').enable;
+
+            }
+        });
+
+        $('#next').click(function () {
+            console.log($('.page-2').hidden);
+            if ($('.page-2').is(':hidden')){
+                $('.page-2').show();
+                $('.page-1').hide();
+                $('#previous').enable;
+                $('#next').disable;
+
+            }
+        });
+    });
+
+</script>
+
 <!--Script -->
 </body>
 </html>
