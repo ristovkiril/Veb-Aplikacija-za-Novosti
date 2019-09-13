@@ -13,8 +13,11 @@
         nav, footer{
             background: #000428; !important;
         }
-
-
+        .darkBlue{
+            color: #000428;
+            border-bottom: 4px solid;
+            border-color: red;
+        }
 
         @media only screen and (max-width: 420px) {
             iframe{
@@ -46,20 +49,31 @@
                     <a class="nav-link" href="../index.html">HOME <span class="sr-only"></span></a>
                 </li>
 
+                <!-- NEWS -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         NEWS
                     </a>
                     <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item " href="../pages/worldnews.html">WORLD</a>
-                        <a class="dropdown-item " href="../pages/politicsnews.html">POLITICS</a>
-                        <a class="dropdown-item " href="../pages/sportnews.html
-                        ">SPORT</a>
+                        <a class="dropdown-item " href="MKDNews.html">MACEDONIAN</a>
+                        <a class="dropdown-item " href="WorldNews.html">WORLD</a>
+                        <a class="dropdown-item " href="PoliticsNews.html">POLITICS</a>
+                        <a class="dropdown-item " href="SportNews.html">SPORT</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="../pages/tv.html">TV</a>
+                <!-- NEWS -->
+
+                <!--GAMING -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        GAMING
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item " href="GamingNews.html">GAMING NEWS</a>
+                        <a class="dropdown-item " href="tv.html">LIVE STREAM</a>
+                    </div>
                 </li>
+                <!--GAMING -->
                 <li class="nav-item">
                     <a class="nav-link " href="about.html">ABOUT US</a>
                 </li>
@@ -81,10 +95,27 @@
 <!--NavBar-->
 
 <!-- Main -->
-<div class="container text-center mt-5 " >
-    
+<div class="container text-center mt-5 bg-light p-0" >
 
-  <div class="accordion" id="accordionExample">
+    <div class="row pl-3">
+
+        <ul class="list-unstyled mt-3  ">
+            <li class="float-left p-2 pl-2">
+                <h3>
+                    <a class="darkBlue border-bottom-0 text-decoration-none" href="GamingNews.html">Gaming News</a>
+                </h3>
+            </li>
+            <li class="float-left p-2 pl-2">
+                <h3>
+                    <a class="darkBlue text-decoration-none" href="#">Live Stream</a>
+                </h3>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="accordion" id="accordionExample">
       <div class="card">
           <div class="card-header m-0 p-0" id="headingTwo">
               <h2 class="mb-0">
