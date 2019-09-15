@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About us </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link href="boostrap4-3/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+            background: lightgray;
+        }
+        nav, footer{
+            background: #000428; !important;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container ">
+        <div class="navbar-brand p-0">
+            <a class="btn btn-link text-light p-0" href="Home"><h4><b>1TV</b></h4></a>
+        </div>
+
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link " href="Home">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- NEWS -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    NEWS
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item " href="MacedonianNews">MACEDONIAN</a>
+                    <a class="dropdown-item " href="WorldNews">WORLD</a>
+                    <a class="dropdown-item " href="PoliticsNews">POLITICS</a>
+                    <a class="dropdown-item " href="SportNews">SPORT</a>
+                </div>
+            </li>
+            <!-- NEWS -->
+
+            <!--GAMING -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    GAMING
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item " href="GamingNews">GAMING NEWS</a>
+                    <a class="dropdown-item " href="LiveStream">LIVE STREAM</a>
+                    <a class="dropdown-item " href="Games">GAMES</a>
+                </div>
+            </li>
+            <!--GAMING -->
+
+            <li class="nav-item">
+                <a class="nav-link " href="About">ABOUT US</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link " href="Contact">CONTACT</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ">
+            <div class="input-group">
+                <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append input-group-sm">
+                    <button class="btn brn-sm btn-light pt-0 pb-0" type="submit"><span class="fa fa-search"></span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</nav>
+<!--NavBar-->
+<!-- Main -->
+    <section class="mt-5 container bg-light pl-md-5 pr-md-5 pt-2 pb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+            Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.
+        </p>
+
+        <div class="row">
+            <!--Grid column-->
+
+            <div class="col-md-4 col-sm-12 text-center ">
+                <h5>
+                    <i class="fa fa-map-marker mt-4 fa-3x" style="color: #000428"></i>
+                    <p class="h6">Rudzer Boshkovikj 16, P.O. 393,
+                        1000 Skopje, Republic of North Macedonia </p>
+                </h5>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <h5>
+                    <i class="fa fa-phone mt-4 fa-3x" style="color: #000428"></i>
+                    <p>+ 389 365 501</p>
+                </h5>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <h5>
+                    <i class="fa fa-envelope mt-4 fa-3x" style="color: #000428"></i>
+                    <p>contact@1tv.com</p>
+                </h5>
+            </div>
+            <!--Grid column-->
+        </div>
+
+        <div class="row m-auto ">
+
+            <!--Grid column-->
+            <div class="col-md-12 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form">
+
+                    <!--Grid row-->
+                    <div class="row pt-4">
+
+                        <!--Grid column-->
+                        <div class="col-md-6 ">
+                            <div class=" ">
+                                <input type="text" id="name" name="name" class="form-control border-top-0 border-left-0 border-right-0">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control border-top-0 border-left-0 border-right-0">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control border-top-0 border-left-0 border-right-0">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control form-text border-top-0 border-left-0 border-right-0"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary text-light" >Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+
+
+<!-- Main -->
+<!-- Footer -->
+<footer class="page-footer font-small  text-center ">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-12 py-5">
+                <div class="mb-5 flex-center">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic" style="color: #fff3cd;">
+                        <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic" style="color: #fff3cd;">
+                        <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic" style="color: #fff3cd;">
+                        <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic" style="color: #fff3cd;">
+                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic" style="color: #fff3cd;">
+                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Pinterest-->
+                    <a class="pin-ic" style="color: #fff3cd;">
+                        <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light">© 2018 Copyright:</div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!--Script -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--Script -->
+
+</body>
+</html>
