@@ -17,6 +17,8 @@
             color: #000428;
             border-bottom: 4px solid;
             border-color: red;
+            font-family: Century;
+            font-weight: normal;
         }
 
 
@@ -90,24 +92,24 @@
 <!-- Main -->
 <div class="container mt-5 bg-light">
     <div class="row ">
-        <div class="col-lg-8 col-md-12 p-0">
+        <div class="col-lg-9 col-md-12 p-0">
             <ul class="list-unstyled mt-3  ">
-                <li class=" float-md-left p-2 pl-2 ">
+                <li class=" float-md-left pt-2 pb-2 pl-2">
                     <h3>
                         <a class="darkBlue border-bottom-0 text-decoration-none" href="MacedonianNews">Macedonian News</a>
                     </h3>
                 </li>
-                <li class=" float-md-left p-2 pl-2">
+                <li class=" float-md-left pt-2 pb-2 pl-3">
                     <h3>
                         <a class="darkBlue border-bottom-0 text-decoration-none" href="WorldNews">World News</a>
                     </h3>
                 </li>
-                <li class=" float-md-left p-2 pl-2">
+                <li class=" float-md-left pt-2 pb-2 pl-3">
                     <h3>
                         <a class="text-decoration-none darkBlue border-bottom-0" href="PoliticsNews">Politics News</a>
                     </h3>
                 </li>
-                <li class=" float-md-left p-2 pl-2">
+                <li class=" float-md-left pt-2 pb-2 pl-3">
                     <h3>
                         <a class="text-decoration-none darkBlue " href="#">Sport News</a>
                     </h3>
@@ -426,7 +428,7 @@
         </div>
         <!-- NEWS -->
         <!--Top 3 News-->
-        <div class="col-lg-4 col-md-12 p-0 pl-lg-1 ">
+        <div class="col-lg-4 col-md-12 p-0 pl-lg-4">
 
             <div class="accordion " id="accordionExample">
 
@@ -626,54 +628,54 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" >
-    $(document).ready(function () {
-
-        $('.page-1').show();
-        $('.page-2').hide();
-
-
-        $('#first-page').click(function () {
+    <script type="text/javascript" >
+        $(document).ready(function () {
 
             $('.page-1').show();
             $('.page-2').hide();
-            $('#previous').disable;
-            $('#next').enable;
-
-        });
-
-        $('#second-page').click(function () {
-            $('.page-2').show();
-            $('.page-1').hide();
-            $('#next').disable;
-            $('#previous').enable;
 
 
-        });
+            $('#first-page').click(function () {
 
-        $('#previous').click(function () {
-            if ($('.page-1').is(':hidden')){
                 $('.page-1').show();
                 $('.page-2').hide();
                 $('#previous').disable;
                 $('#next').enable;
 
-            }
-        });
+            });
 
-        $('#next').click(function () {
-            console.log($('.page-2').hidden);
-            if ($('.page-2').is(':hidden')){
+            $('#second-page').click(function () {
                 $('.page-2').show();
                 $('.page-1').hide();
-                $('#previous').enable;
                 $('#next').disable;
+                $('#previous').enable;
 
-            }
+
+            });
+
+            $('#previous').click(function () {
+                if ($('.page-1').is(':hidden')){
+                    $('.page-1').show();
+                    $('.page-2').hide();
+                    $('#previous').disable;
+                    $('#next').enable;
+
+                }
+            });
+
+            $('#next').click(function () {
+                console.log($('.page-2').hidden);
+                if ($('.page-2').is(':hidden')){
+                    $('.page-2').show();
+                    $('.page-1').hide();
+                    $('#previous').enable;
+                    $('#next').disable;
+
+                }
+            });
         });
-    });
 
-</script>
+    </script>
 
 <!--Script -->
 </body>

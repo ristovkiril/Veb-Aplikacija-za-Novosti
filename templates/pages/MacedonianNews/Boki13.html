@@ -18,6 +18,8 @@
             color: #000428;
             border-bottom: 4px solid;
             border-color: red;
+            font-family: Century;
+            font-weight: normal;
         }
         img{
             object-fit: cover;
@@ -40,6 +42,17 @@
             text-decoration: none;
         }
 
+        @media only screen and (max-width: 420px) {
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+
+            .darkBlue{
+                font-size: 35px;
+            }
+
+        }
     </style>
 
 </head>
@@ -109,13 +122,13 @@
 <!-- Main -->
 <div class="container mt-5 bg-light">
     <div class="row">
-        <div class="m-4 col-lg-8">
+        <div class="m-md-4 m-sm-2 col-lg-8 col-sm-12 p-sm-0">
             <h1>
                 <a class="darkBlue" href="../MacedonianNews">MACEDONIAN NEWS</a>
             </h1>
         </div>
 
-        <div class="col-lg-8 col md-8 cool-sm-12 pb-3">
+        <div class="col-lg-8 col md-8 col-sm-12 pb-3 p-sm-0">
             <!-- Title -->
             <div class="col-12 pb-3">
                 <h2>Tapes show Boki 13 taking a bag of money from Jordan Kamcev</h2>
